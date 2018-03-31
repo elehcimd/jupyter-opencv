@@ -17,7 +17,7 @@ Based on **Ubuntu 16.4** and includes:
 
 **WARNING**: Any modification might be lost at container termination!
 Mount a local directory with mount point `/playground/local` to persist its changes:
-https://docs.docker.com/engine/reference/run/#volume-shared-filesystems 
+https://docs.docker.com/engine/reference/run/#volume-shared-filesystems
 
 ## Demo of container-host X Window interaction
 
@@ -61,10 +61,6 @@ Follow these steps on the host:
 3. Open a web shell in the container: http://127.0.0.1:8889/terminals/1 and execute the following commands:
    1. Run `export DISPLAY=docker.for.win.localhost:0`
    2. Run `xeyes` 
-
-
-
-
 
 
 ## Docker image development
@@ -173,7 +169,6 @@ To fix some common pep8 errors in the code:
 ```
 fab fix_pep8
 ```
-
 
 ## Contributing
 
