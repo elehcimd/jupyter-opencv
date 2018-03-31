@@ -9,21 +9,23 @@ Based on **Ubuntu 16.4** and includes:
 * Demo of Jupyter notebook with embedded web video player and OpenCV processing
 * Demo of container-host X Window interaction with `xeyes` 
 
-## Usage
+
+## Quick start
 
 * Install Docker: https://docs.docker.com/install/
 * Start container: `docker run -p 127.0.0.1:8889:8888 micheda/jupyter-opencv:3.4.0`
 * Open demo of Jupyter notebook at http://127.0.0.1:8889/notebooks/notebooks/demo.ipynb
 
-**WARNING**: Any modification might be lost at container termination!
+**Warning**: Any modification might be lost at container termination!
 Mount a local directory with mount point `/playground/local` to persist its changes:
 https://docs.docker.com/engine/reference/run/#volume-shared-filesystems
 
-## Demo of container-host X Window interaction
+## Demo of X Window application
 
 This demo shows you how to use the X Window System Server running on the host
 to visualize and interact with visual applications running in the container.
 E.g., you can interact with `xeyes`, visualize a video with `ffmpeg` and use the OpenCV highgui module.
+
 
 ### X Window demo For MacOS users:
 
@@ -52,6 +54,7 @@ Follow these steps on the host:
 
 Recommendation: use the Windows PowerShell to execute commands.
 
+
 ### X Window demo For Linux users:
 
 Follow these steps on the host:
@@ -59,7 +62,7 @@ Follow these steps on the host:
 1. Install Xorg following the instructions for your distribution. Most likely it's alraedy installed if you are accessing this document from its web browser.
 2. Run `xhost +` to allow connections from any host to the Linux host
 3. Open a web shell in the container: http://127.0.0.1:8889/terminals/1 and execute the following commands:
-   1. Run `export DISPLAY=docker.for.win.localhost:0`
+   1. Run `export DISPLAY=docker.for.linux.localhost:0`
    2. Run `xeyes` 
 
 
@@ -72,7 +75,14 @@ Install Docker and Fabric in your host system. To install Fabric:
 pip install Fabric3
 ```
 
+
 ### Building and publishing a new release
+
+Update build:
+
+```
+fab docker_build
+```
 
 Verify that tests are all green:
 
@@ -169,6 +179,7 @@ To fix some common pep8 errors in the code:
 ```
 fab fix_pep8
 ```
+
 
 ## Contributing
 
