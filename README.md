@@ -78,13 +78,13 @@ pip install Fabric3
 
 ### Building and publishing a new release
 
-Update build:
+Update the build:
 
 ```
 fab docker_build
 ```
 
-Verify that tests are all green:
+Verify that the tests are all green:
 
 ```
 fab test
@@ -93,10 +93,13 @@ fab test
 Generate the demo Jupyter notebook from the Python notebook source:
 
 ```
-fab docker_exec:'pynb notebooks_src/demo.py --export-ipynb notebooks/demo.ipynb --no-exec --disable-footer'
+fab docker_exec:'pynb notebooks_src/demo.py \
+    --export-ipynb notebooks/demo.ipynb \
+    --no-exec \
+    --disable-footer'
 ```
 
-Authenticate user, tag and push container:
+Authenticate your user, tag and push the image:
 
 ```
 docker login --username micheda
