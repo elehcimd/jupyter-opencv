@@ -14,7 +14,7 @@ Based on **Ubuntu 16.4** and includes:
 
 * Install Docker: https://docs.docker.com/install/
 * Start container: `docker run -p 127.0.0.1:8889:8888 micheda/jupyter-opencv:3.4.0`
-* Open demo of Jupyter notebook at http://127.0.0.1:8889/notebooks/notebooks/demo.ipynb
+* Open Jupyter notebook demo at http://127.0.0.1:8889/notebooks/notebooks/demo.ipynb
 
 **Warning**: Any modification might be lost at container termination!
 Mount a local directory with mount point `/playground/local` to persist its changes:
