@@ -3,12 +3,11 @@
 Based on **Ubuntu 16.4** and includes:
 
 * **Python3.5** as default Python interpreter
-* **OpenCV 3.4** with extra modules, highgui support, and Python3 bindings
+* **OpenCV 3.4** with extra modules, highgui and Python support
 * **Jupyter notebook** web server
 * **X Window libraries** compatible with MacOS (XQuartz), Windows (Xming) and Linux (X.Org) 
 * Demo of Jupyter notebook with embedded web video player and OpenCV processing
 * Demo of container-host X Window interaction with `xeyes` 
-
 
 ## Quick start
 
@@ -78,10 +77,11 @@ pip install Fabric3
 
 ### Building and publishing a new release
 
-Update the build:
+Update the build, and start:
 
 ```
 fab docker_build
+fab docker_start
 ```
 
 Verify that the tests are all green:
