@@ -15,9 +15,20 @@ Based on **Ubuntu 16.4** and includes:
 * Start container: `docker run -p 127.0.0.1:8889:8888 micheda/jupyter-opencv:3.4.0`
 * Open Jupyter notebook demo at http://127.0.0.1:8889/notebooks/notebooks/demo.ipynb
 
-**Warning**: Any modification might be lost at container termination!
-Mount a local directory with mount point `/playground/local` to persist its changes:
-https://docs.docker.com/engine/reference/run/#volume-shared-filesystems
+Any modification will be lost at container termination. Next section provides instructions to persist changes.
+
+## Persisting your notebooks
+
+To persist changes in the container, we must *mount* a directory on the host inside the container using the `-v` option, documented at https://docs.docker.com/engine/reference/run/#volume-shared-filesystems . In the following example, the host directory  `/your/notebooks/folder` is mounted on the container directory `/playground/shared`:
+
+```
+docker run -p 127.0.0.1:8889:8888 -v/your/notebooks/folder:/playground/shared micheda/jupyter-opencv:3.4.0
+```
+
+Any changes inside `/playground/shared` are persisted in the corresponding host directory.
+You can mount the host directory at mountpoint `/playground` to hide the examples.
+
+The root Jupyter directory can be accessed at http://spark-driver:8888/tree?
 
 ## Demo of X Window application
 
