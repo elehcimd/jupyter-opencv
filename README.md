@@ -19,7 +19,7 @@ Any modification will be lost at container termination. Next section provides in
 
 ## Persisting your notebooks
 
-To persist modifications to notebooks, we must *mount* a directory on the host inside the container using the `-v` option, documented at https://docs.docker.com/engine/reference/run/#volume-shared-filesystems . In the following example, the host directory  `/your/notebooks` is mounted on the container directory `/playground/shared`:
+To persist modifications to notebooks, you must *mount* a directory on the host inside the container using the `-v` option, documented at https://docs.docker.com/engine/reference/run/#volume-shared-filesystems . In the following example, the host directory  `/your/notebooks` is mounted on the container directory `/playground/shared`:
 
 ```
 docker run -p 127.0.0.1:8889:8888 -v/your/notebooks:/playground/shared micheda/jupyter-opencv:3.4.0
