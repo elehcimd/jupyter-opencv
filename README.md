@@ -33,11 +33,6 @@ Modifications inside `/playground/shared` are persisted in the corresponding hos
 You can mount the host directory at mountpoint `/playground` to hide the examples.
 The root Jupyter directory can be accessed at http://spark-driver:8888/tree.
 
-## Credits
-
-* OpenCV integration based on https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/ - Thank You, Adrian!
-
-
 ## Advanced topics
 ### Demo of X Window application
 
@@ -202,7 +197,11 @@ fab fix_pep8
 ```
 
 
-### Contributing
+## Credits
+
+* OpenCV integration based on https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/ - Thank You, Adrian!
+
+## Contributing
 
 1. Fork it
 2. Create your feature branch: `git checkout -b my-new-feature`
