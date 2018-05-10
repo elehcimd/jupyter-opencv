@@ -1,6 +1,8 @@
 # Jupyter-OpenCV Docker image
 
-This Docker image provides a cross-platform environment that includes Jupyter Notebooks, Python3 and OpenCV to experiment with computer-vision. Tested on Windows, MacOS, and Linux. Friends in environmental engineering use it on Windows as alternative to MATLAB.
+This Docker image provides a cross-platform environment that includes Jupyter Notebooks, Python3 and OpenCV 3.4 to experiment with computer-vision. Tested on Windows, MacOS, and Linux. Friends in environmental engineering use it on Windows as alternative to MATLAB.
+
+## Image details
 
 Based on **Ubuntu 16.4** and includes:
 
