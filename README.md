@@ -93,7 +93,7 @@ pip install Fabric3
 ```
 
 
-### Building and publishing a new release
+#### Building and publishing a new release
 
 Update the build, and start:
 
@@ -126,7 +126,7 @@ docker push micheda/jupyter-opencv:3.4.0
 ```
 
 
-### Docker container
+#### Docker container
 
 To build the Docker image:
 
@@ -167,7 +167,7 @@ fab docker_sh
 ```
 
 
-### Running the tests
+#### Running the tests
 
 Before running the tests, start the container.
 
@@ -202,7 +202,7 @@ fab fix_pep8
 ```
 
 
-## Contributing
+### Contributing
 
 1. Fork it
 2. Create your feature branch: `git checkout -b my-new-feature`
