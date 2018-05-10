@@ -33,13 +33,19 @@ Modifications inside `/playground/shared` are persisted in the corresponding hos
 You can mount the host directory at mountpoint `/playground` to hide the examples.
 The root Jupyter directory can be accessed at http://spark-driver:8888/tree.
 
-## Demo of X Window application
+## Credits
+
+* OpenCV integration based on https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/ - Thank You, Adrian!
+
+
+## Advanced topics
+### Demo of X Window application
 
 This demo shows you how to use the X Window System Server running on the host
 to visualize and interact with visual applications running in the container.
 E.g., you can interact with `xeyes`, visualize a video with `ffmpeg` and use the OpenCV highgui module.
 
-### X Window demo For MacOS users:
+#### X Window demo For MacOS users:
 
 Follow these steps on the host:
 
@@ -53,7 +59,7 @@ Follow these steps on the host:
    2. Run `xeyes` 
 
 
-### X Window demo For Windows users:
+#### X Window demo For Windows users:
 
 Follow these steps on the host:
 
@@ -67,7 +73,7 @@ Follow these steps on the host:
 Recommendation: use the Windows PowerShell to execute commands.
 
 
-### X Window demo For Linux users:
+#### X Window demo For Linux users:
 
 Follow these steps on the host:
 
@@ -76,12 +82,8 @@ Follow these steps on the host:
 3. Open a web shell in the container: http://127.0.0.1:8889/terminals/1 and execute the following commands:
    1. Run `export DISPLAY=docker.for.linux.localhost:0`
    2. Run `xeyes` 
-
-## Credits
-
-* OpenCV integration based on https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/ - Thank You, Adrian!
  
-## Docker image development
+### Image development
 
 Builds, tests and releases are managed with `Fabric`.
 Install Docker and Fabric in your host system. To install Fabric:
