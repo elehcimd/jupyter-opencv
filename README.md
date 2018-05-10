@@ -39,7 +39,6 @@ This demo shows you how to use the X Window System Server running on the host
 to visualize and interact with visual applications running in the container.
 E.g., you can interact with `xeyes`, visualize a video with `ffmpeg` and use the OpenCV highgui module.
 
-
 ### X Window demo For MacOS users:
 
 Follow these steps on the host:
