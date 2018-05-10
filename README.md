@@ -10,8 +10,8 @@ Based on **Ubuntu 16.4** and includes:
 * **OpenCV 3.4** with extra modules, highgui and Python support
 * **Jupyter notebook** web server
 * **X Window libraries** compatible with MacOS (XQuartz), Windows (Xming) and Linux (X.Org) 
-* Includes demo of Jupyter notebook with embedded web video player and OpenCV processing
-* Includes Demo of container-host X Window interaction with `xeyes`
+* Demo of Jupyter notebook with embedded web video player and OpenCV processing
+* Demo of container-host X Window interaction with `xeyes`
 
 ## Quick start
 
