@@ -1,8 +1,8 @@
 # Jupyter-OpenCV Docker image
 
-This container provides a cross-platform environment (tested on Windows, MacOS and Linux) based on Docker, Jupyter Notebooks, Python3 and OpenCV to experiment with computer-vision. Friends in environmental engineering use it on Windows as alternative to MATLAB. Loosely based on https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/.
+This container provides a cross-platform environment (tested on Windows, MacOS and Linux) based on Docker, Jupyter Notebooks, Python3 and OpenCV to experiment with computer-vision. Friends in environmental engineering use it on Windows as alternative to MATLAB.
 
-Extends **Ubuntu 16.4** and includes:
+Based on **Ubuntu 16.4** and includes:
 
 * **Python3.5** as default Python interpreter
 * **OpenCV 3.4** with extra modules, highgui and Python support
@@ -76,7 +76,10 @@ Follow these steps on the host:
    1. Run `export DISPLAY=docker.for.linux.localhost:0`
    2. Run `xeyes` 
 
+## Credits
 
+* OpenCV integration based on https://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/ - Thank You, Adrian!
+ 
 ## Docker image development
 
 Builds, tests and releases are managed with `Fabric`.
