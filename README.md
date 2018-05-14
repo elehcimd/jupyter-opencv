@@ -15,7 +15,7 @@ Based on **Ubuntu 16.4** and includes:
 
 ## Quick start
 
-* Install Docker: https://docs.docker.com/install/
+* Install Docker: https://docs.docker.com/install
 * Start container: `docker run -p 127.0.0.1:8889:8888 micheda/jupyter-opencv:3.4.0`
 * Open Jupyter notebook demo at http://127.0.0.1:8889/notebooks/notebooks/demo.ipynb
 
@@ -31,7 +31,7 @@ docker run -p 127.0.0.1:8889:8888 -v/your/notebooks:/playground/shared micheda/j
 
 Modifications inside `/playground/shared` are persisted in the corresponding host directory, `/your/notebooks`.
 You can mount the host directory at mountpoint `/playground` to hide the examples.
-The root Jupyter directory can be accessed at http://spark-driver:8888/tree.
+The root Jupyter directory can be accessed at http://127.0.0.1:8889
 
 ## Advanced topics
 ### Demo of X Window application
