@@ -47,6 +47,7 @@ Follow these steps on the host:
 1. Install XQuartz (MacOS): https://www.xquartz.org/
 2. Launch XQuartz. Under the XQuartz menu, select Preferences
 3. Go to the security tab and ensure `Allow connections from network clients` is checked
+4. Logout your user and login again
 4. Restart XQartz
 5. Run `xhost +` to allow connections from any host to the macOS host
 6. Open a web shell in the container: http://127.0.0.1:8889/terminals/1 and execute the following commands:
